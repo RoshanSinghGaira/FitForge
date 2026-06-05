@@ -882,3 +882,886 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FitForge Elite — Transform your body and elevate your life with personalized AI-powered fitness programs, expert coaching, and a community of 50K+ members.">
+  <meta name="keywords" content="fitness, gym, workout, personal training, fat loss, muscle building, nutrition">
+  <meta name="author" content="FitForge Elite">
+  <meta name="theme-color" content="#08090d">
+  <title>FitForge Elite — Transform Your Body. Elevate Your Life.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div id="preloader" aria-label="Loading">
+    <div class="preloader-logo">FITFORGE ELITE</div>
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="nav-logo" aria-label="FitForge Elite Home">
+          <div class="logo-icon">⚡</div>
+          <span>FITFORGE</span>
+        </a>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#features" class="active">Features</a>
+          <a href="#programs">Programs</a>
+          <a href="#trainers">Trainers</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+            🌙
+          </button>
+          <a href="#pricing" class="btn btn-primary btn-sm" id="nav-cta">Join Now</a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-athlete.png" alt="Fitness athlete in dark gym" loading="eager" width="1920"
+        height="1080">
+      <div class="hero-orb hero-orb--blue parallax-element" data-speed="0.03"></div>
+      <div class="hero-orb hero-orb--purple parallax-element" data-speed="0.05"></div>
+      <div class="hero-orb hero-orb--green parallax-element" data-speed="0.02"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="pulse"></span>
+          Now Enrolling — Limited Spots Available
+        </div>
+
+        <h1 class="hero-title reveal reveal-delay-1">
+          <span class="line">Transform Your Body.</span>
+          <span class="line"><span class="highlight">Elevate Your Life.</span></span>
+        </h1>
+
+        <p class="hero-subtitle reveal reveal-delay-2">
+          Unlock your potential with AI-driven personalized workouts, expert coaching, and a community that pushes you
+          beyond limits.
+        </p>
+
+        <div class="hero-buttons reveal reveal-delay-3">
+          <a href="#pricing" class="btn btn-primary" id="cta-start-training">
+            Start Training
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#programs" class="btn btn-outline" id="cta-view-programs">
+            View Programs
+          </a>
+        </div>
+
+        <div class="hero-stats reveal reveal-delay-4">
+          <div class="hero-stat">
+            <div class="hero-stat-number"><span class="count-up" data-target="50">0</span>K+</div>
+            <div class="hero-stat-label">Members</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number"><span class="count-up" data-target="10">0</span>K+</div>
+            <div class="hero-stat-label">Transformations</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number"><span class="count-up" data-target="500">0</span>+</div>
+            <div class="hero-stat-label">Expert Trainers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="section-title">Everything You Need to <span class="highlight">Succeed</span></h2>
+        <p class="section-description">Cutting-edge technology meets proven fitness science to deliver results that
+          speak for themselves.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card glass-card reveal reveal-delay-1">
+          <div class="feature-icon feature-icon--blue">🏋️</div>
+          <h3 class="feature-title">Personalized Workout Plans</h3>
+          <p class="feature-desc">AI-crafted routines tailored to your body type, goals, and fitness level. Adapts as
+            you progress.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card glass-card reveal reveal-delay-2">
+          <div class="feature-icon feature-icon--green">📊</div>
+          <h3 class="feature-title">AI Fitness Tracking</h3>
+          <p class="feature-desc">Smart analytics monitor every rep, set, and calorie. Real-time insights to optimize
+            performance.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card glass-card reveal reveal-delay-3">
+          <div class="feature-icon feature-icon--purple">🥗</div>
+          <h3 class="feature-title">Nutrition Guidance</h3>
+          <p class="feature-desc">Custom meal plans designed by certified nutritionists. Macro tracking and meal prep
+            made simple.</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature-card glass-card reveal reveal-delay-1">
+          <div class="feature-icon feature-icon--blue">📈</div>
+          <h3 class="feature-title">Progress Analytics</h3>
+          <p class="feature-desc">Visual dashboards that track your body composition, strength gains, and overall
+            wellness journey.</p>
+        </div>
+        <!-- Feature 5 -->
+        <div class="feature-card glass-card reveal reveal-delay-2">
+          <div class="feature-icon feature-icon--green">🎥</div>
+          <h3 class="feature-title">Online Coaching</h3>
+          <p class="feature-desc">1-on-1 video sessions with certified trainers. Get form checks and motivation from
+            anywhere.</p>
+        </div>
+        <!-- Feature 6 -->
+        <div class="feature-card glass-card reveal reveal-delay-3">
+          <div class="feature-icon feature-icon--purple">🏆</div>
+          <h3 class="feature-title">Community Challenges</h3>
+          <p class="feature-desc">Compete in weekly challenges, earn badges, and stay accountable with a global fitness
+            community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROGRAMS ========== -->
+  <section class="section" id="programs" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Programs</div>
+        <h2 class="section-title">Find Your Perfect <span class="highlight">Program</span></h2>
+        <p class="section-description">Expert-designed programs for every goal. From fat loss to elite performance —
+          we've got you covered.</p>
+      </div>
+
+      <div class="programs-grid">
+        <!-- Program 1 -->
+        <div class="program-card glass-card reveal reveal-delay-1">
+          <div class="program-card-img">
+            <img src="assets/images/program-fatloss.png" alt="Fat Loss Program" loading="lazy" width="400" height="220">
+            <span class="program-difficulty difficulty-beginner">Beginner</span>
+          </div>
+          <div class="program-card-body">
+            <h3 class="program-card-title">Fat Loss Program</h3>
+            <p class="program-card-desc">High-intensity interval training combined with strategic nutrition to burn fat
+              and reveal lean muscle.</p>
+            <div class="program-meta">
+              <span>⏱ 12 Weeks</span>
+              <span>🔥 5x / Week</span>
+              <span>📊 Avg -8kg</span>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm" id="join-fatloss">Join Now</a>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="program-card glass-card reveal reveal-delay-2">
+          <div class="program-card-img">
+            <img src="assets/images/program-muscle.png" alt="Muscle Building Program" loading="lazy" width="400"
+              height="220">
+            <span class="program-difficulty difficulty-intermediate">Intermediate</span>
+          </div>
+          <div class="program-card-body">
+            <h3 class="program-card-title">Muscle Building</h3>
+            <p class="program-card-desc">Progressive overload training with optimized nutrition to build quality muscle
+              mass and strength.</p>
+            <div class="program-meta">
+              <span>⏱ 16 Weeks</span>
+              <span>🔥 6x / Week</span>
+              <span>📊 Avg +5kg</span>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm" id="join-muscle">Join Now</a>
+          </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="program-card glass-card reveal reveal-delay-3">
+          <div class="program-card-img">
+            <img src="assets/images/program-strength.png" alt="Strength Training" loading="lazy" width="400"
+              height="220">
+            <span class="program-difficulty difficulty-advanced">Advanced</span>
+          </div>
+          <div class="program-card-body">
+            <h3 class="program-card-title">Strength Training</h3>
+            <p class="program-card-desc">Powerlifting-focused program to maximize your deadlift, squat, and bench press
+              numbers.</p>
+            <div class="program-meta">
+              <span>⏱ 20 Weeks</span>
+              <span>🔥 4x / Week</span>
+              <span>📊 +30% PR</span>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm" id="join-strength">Join Now</a>
+          </div>
+        </div>
+
+        <!-- Program 4 -->
+        <div class="program-card glass-card reveal reveal-delay-1">
+          <div class="program-card-img">
+            <img src="assets/images/program-home.png" alt="Home Workout" loading="lazy" width="400" height="220">
+            <span class="program-difficulty difficulty-beginner">Beginner</span>
+          </div>
+          <div class="program-card-body">
+            <h3 class="program-card-title">Home Workout</h3>
+            <p class="program-card-desc">No gym? No problem. Effective bodyweight and minimal-equipment workouts from
+              your living room.</p>
+            <div class="program-meta">
+              <span>⏱ 8 Weeks</span>
+              <span>🔥 4x / Week</span>
+              <span>📊 No Equipment</span>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm" id="join-home">Join Now</a>
+          </div>
+        </div>
+
+        <!-- Program 5 -->
+        <div class="program-card glass-card reveal reveal-delay-2">
+          <div class="program-card-img">
+            <img src="assets/images/program-womens.png" alt="Women's Fitness" loading="lazy" width="400" height="220">
+            <span class="program-difficulty difficulty-intermediate">Intermediate</span>
+          </div>
+          <div class="program-card-body">
+            <h3 class="program-card-title">Women's Fitness</h3>
+            <p class="program-card-desc">Empowering programs designed for women — tone, strengthen, and build confidence
+              with guided routines.</p>
+            <div class="program-meta">
+              <span>⏱ 12 Weeks</span>
+              <span>🔥 5x / Week</span>
+              <span>📊 Full Body</span>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm" id="join-womens">Join Now</a>
+          </div>
+        </div>
+
+        <!-- Program 6 -->
+        <div class="program-card glass-card reveal reveal-delay-3">
+          <div class="program-card-img">
+            <img src="assets/images/program-athlete.png" alt="Athlete Performance" loading="lazy" width="400"
+              height="220">
+            <span class="program-difficulty difficulty-advanced">Advanced</span>
+          </div>
+          <div class="program-card-body">
+            <h3 class="program-card-title">Athlete Performance</h3>
+            <p class="program-card-desc">Elite-level sport-specific training for competitive athletes. Speed, agility,
+              and peak performance.</p>
+            <div class="program-meta">
+              <span>⏱ 24 Weeks</span>
+              <span>🔥 6x / Week</span>
+              <span>📊 Elite Level</span>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm" id="join-athlete">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRANSFORMATIONS ========== -->
+  <section class="section" id="transformations">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Real Results</div>
+        <h2 class="section-title">Incredible <span class="highlight">Transformations</span></h2>
+        <p class="section-description">Real people. Real results. See what's possible when you commit to the FitForge
+          method.</p>
+      </div>
+
+      <div class="transformations-slider">
+        <div class="transform-card glass-card">
+          <div class="transform-card-img">
+            <img src="assets/images/transform-1.png" alt="Transformation before and after" loading="lazy" width="480"
+              height="320">
+            <div class="transform-label">
+              <span class="label-before">Before</span>
+              <span class="label-after">After</span>
+            </div>
+          </div>
+          <div class="transform-card-body">
+            <div class="transform-card-name">Marcus Johnson</div>
+            <div class="transform-card-result">Lost 22kg in 16 weeks</div>
+            <p class="transform-card-story">"FitForge didn't just change my body — it changed my entire mindset. The AI
+              tracking kept me accountable every single day."</p>
+          </div>
+        </div>
+
+        <div class="transform-card glass-card">
+          <div class="transform-card-img">
+            <img src="assets/images/transform-2.png" alt="Transformation before and after" loading="lazy" width="480"
+              height="320">
+            <div class="transform-label">
+              <span class="label-before">Before</span>
+              <span class="label-after">After</span>
+            </div>
+          </div>
+          <div class="transform-card-body">
+            <div class="transform-card-name">Sarah Mitchell</div>
+            <div class="transform-card-result">Lost 18kg in 12 weeks</div>
+            <p class="transform-card-story">"The women's fitness program was a game-changer. I feel stronger, more
+              confident, and healthier than I've ever been."</p>
+          </div>
+        </div>
+
+        <div class="transform-card glass-card">
+          <div class="transform-card-img">
+            <img src="assets/images/transform-1.png" alt="Transformation before and after" loading="lazy" width="480"
+              height="320">
+            <div class="transform-label">
+              <span class="label-before">Before</span>
+              <span class="label-after">After</span>
+            </div>
+          </div>
+          <div class="transform-card-body">
+            <div class="transform-card-name">David Chen</div>
+            <div class="transform-card-result">Gained 8kg muscle in 20 weeks</div>
+            <p class="transform-card-story">"I went from skinny to strong. The muscle building program with nutrition
+              guidance was exactly what I needed."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="transform-counters reveal">
+        <div class="counter-card glass-card">
+          <div class="counter-number blue"><span class="count-up" data-target="95">0</span>%</div>
+          <div class="counter-label">Success Rate</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-number green"><span class="count-up" data-target="10">0</span>K+</div>
+          <div class="counter-label">Transformations</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-number purple"><span class="count-up" data-target="4.9" data-decimals="1">0</span></div>
+          <div class="counter-label">Average Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRAINERS ========== -->
+  <section class="section" id="trainers" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Expert Team</div>
+        <h2 class="section-title">Meet Your <span class="highlight">Trainers</span></h2>
+        <p class="section-description">World-class certified trainers who are passionate about helping you reach your
+          peak performance.</p>
+      </div>
+
+      <div class="trainers-grid">
+        <div class="trainer-card glass-card reveal reveal-delay-1">
+          <div class="trainer-img">
+            <img src="assets/images/trainer-1.png" alt="Coach Alex Rivera" loading="lazy" width="400" height="340">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#" class="trainer-social-link" aria-label="Instagram">📷</a>
+                <a href="#" class="trainer-social-link" aria-label="Twitter">🐦</a>
+                <a href="#" class="trainer-social-link" aria-label="LinkedIn">💼</a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-body">
+            <div class="trainer-name">Alex Rivera</div>
+            <div class="trainer-spec">Strength & Conditioning</div>
+            <div class="trainer-exp">12 Years Experience</div>
+          </div>
+        </div>
+
+        <div class="trainer-card glass-card reveal reveal-delay-2">
+          <div class="trainer-img">
+            <img src="assets/images/trainer-2.png" alt="Coach Maya Patel" loading="lazy" width="400" height="340">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#" class="trainer-social-link" aria-label="Instagram">📷</a>
+                <a href="#" class="trainer-social-link" aria-label="Twitter">🐦</a>
+                <a href="#" class="trainer-social-link" aria-label="LinkedIn">💼</a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-body">
+            <div class="trainer-name">Maya Patel</div>
+            <div class="trainer-spec">Yoga & Mobility</div>
+            <div class="trainer-exp">8 Years Experience</div>
+          </div>
+        </div>
+
+        <div class="trainer-card glass-card reveal reveal-delay-3">
+          <div class="trainer-img">
+            <img src="assets/images/trainer-3.png" alt="Coach James Foster" loading="lazy" width="400" height="340">
+            <div class="trainer-overlay">
+              <div class="trainer-socials">
+                <a href="#" class="trainer-social-link" aria-label="Instagram">📷</a>
+                <a href="#" class="trainer-social-link" aria-label="Twitter">🐦</a>
+                <a href="#" class="trainer-social-link" aria-label="LinkedIn">💼</a>
+              </div>
+            </div>
+          </div>
+          <div class="trainer-body">
+            <div class="trainer-name">James Foster</div>
+            <div class="trainer-spec">HIIT & Fat Loss</div>
+            <div class="trainer-exp">10 Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Membership Plans</div>
+        <h2 class="section-title">Invest in Your <span class="highlight">Future Self</span></h2>
+        <p class="section-description">Flexible plans designed for every fitness journey. Cancel anytime.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Basic -->
+        <div class="pricing-card glass-card reveal reveal-delay-1">
+          <div class="pricing-name">Basic</div>
+          <div class="pricing-desc">Perfect for beginners looking to start their fitness journey.</div>
+          <div class="pricing-amount">
+            <span class="pricing-currency">₹</span>999
+            <span class="pricing-period">/month</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <span class="check check-blue">✓</span>
+              Access to workout library
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-blue">✓</span>
+              Basic progress tracking
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-blue">✓</span>
+              Community access
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-blue">✓</span>
+              Email support
+            </div>
+            <div class="pricing-feature" style="opacity:.4">
+              <span class="check check-blue">✗</span>
+              Personalized plans
+            </div>
+            <div class="pricing-feature" style="opacity:.4">
+              <span class="check check-blue">✗</span>
+              1-on-1 coaching
+            </div>
+          </div>
+          <button class="btn btn-outline" id="plan-basic">Get Started</button>
+        </div>
+
+        <!-- Pro (Popular) -->
+        <div class="pricing-card glass-card popular reveal reveal-delay-2">
+          <div class="pricing-name">Pro</div>
+          <div class="pricing-desc">The most popular plan for serious fitness enthusiasts.</div>
+          <div class="pricing-amount">
+            <span class="pricing-currency">₹</span>1999
+            <span class="pricing-period">/month</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <span class="check check-green">✓</span>
+              Everything in Basic
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-green">✓</span>
+              AI personalized plans
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-green">✓</span>
+              Nutrition guidance
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-green">✓</span>
+              Advanced analytics
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-green">✓</span>
+              Weekly group coaching
+            </div>
+            <div class="pricing-feature" style="opacity:.4">
+              <span class="check check-green">✗</span>
+              1-on-1 private coaching
+            </div>
+          </div>
+          <button class="btn btn-primary" id="plan-pro">Get Started</button>
+        </div>
+
+        <!-- Elite -->
+        <div class="pricing-card glass-card reveal reveal-delay-3">
+          <div class="pricing-name">Elite</div>
+          <div class="pricing-desc">The ultimate package with private coaching and full support.</div>
+          <div class="pricing-amount">
+            <span class="pricing-currency">₹</span>2999
+            <span class="pricing-period">/month</span>
+          </div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature">
+              <span class="check check-purple">✓</span>
+              Everything in Pro
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-purple">✓</span>
+              1-on-1 private coaching
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-purple">✓</span>
+              Custom meal plans
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-purple">✓</span>
+              Priority support 24/7
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-purple">✓</span>
+              Monthly body analysis
+            </div>
+            <div class="pricing-feature">
+              <span class="check check-purple">✓</span>
+              VIP community access
+            </div>
+          </div>
+          <button class="btn btn-outline" id="plan-elite">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section" id="testimonials" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Testimonials</div>
+        <h2 class="section-title">What Our Members <span class="highlight">Say</span></h2>
+        <p class="section-description">Real stories from real people who transformed their lives with FitForge Elite.
+        </p>
+      </div>
+
+      <div class="testimonials-carousel reveal">
+        <div class="testimonial-track" id="testimonial-track">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card glass-card">
+              <img src="assets/images/testimonial-users.png" alt="Jessica R." class="testimonial-avatar" loading="lazy"
+                width="72" height="72">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">"I've tried dozens of fitness apps and programs. FitForge Elite is the only
+                one that actually delivered results. The AI tracking is next level — it's like having a personal trainer
+                in your pocket 24/7."</p>
+              <div class="testimonial-name">Jessica R.</div>
+              <div class="testimonial-role">Lost 15kg • Pro Member</div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card glass-card">
+              <img src="assets/images/testimonial-users.png" alt="Michael T." class="testimonial-avatar" loading="lazy"
+                width="72" height="72">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">"The muscle building program exceeded all my expectations. Gained 6kg of lean
+                muscle in just 4 months. The nutrition guidance was the missing piece I needed."</p>
+              <div class="testimonial-name">Michael T.</div>
+              <div class="testimonial-role">Gained 6kg Muscle • Elite Member</div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card glass-card">
+              <img src="assets/images/testimonial-users.png" alt="Amanda L." class="testimonial-avatar" loading="lazy"
+                width="72" height="72">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <p class="testimonial-text">"As a busy mom, I needed something flexible. The home workout program is
+                perfect — effective, time-efficient, and the community keeps me motivated every day."</p>
+              <div class="testimonial-name">Amanda L.</div>
+              <div class="testimonial-role">Home Workout Program • Pro Member</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Previous testimonial">◀</button>
+          <div class="carousel-dots" id="carousel-dots">
+            <span class="carousel-dot active" data-index="0"></span>
+            <span class="carousel-dot" data-index="1"></span>
+            <span class="carousel-dot" data-index="2"></span>
+          </div>
+          <button class="carousel-btn" id="carousel-next" aria-label="Next testimonial">▶</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BMI CALCULATOR ========== -->
+  <section class="section" id="bmi">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Health Tool</div>
+        <h2 class="section-title">Calculate Your <span class="highlight">BMI</span></h2>
+        <p class="section-description">Know your starting point. Use our interactive BMI calculator to get personalized
+          health insights.</p>
+      </div>
+
+      <div class="bmi-container reveal">
+        <div class="bmi-form glass-card">
+          <div class="bmi-input-group">
+            <label for="bmi-height" class="bmi-label">Height (cm)</label>
+            <input type="number" id="bmi-height" class="bmi-input" placeholder="e.g., 175" min="100" max="250"
+              aria-label="Height in centimeters">
+          </div>
+          <div class="bmi-input-group">
+            <label for="bmi-weight" class="bmi-label">Weight (kg)</label>
+            <input type="number" id="bmi-weight" class="bmi-input" placeholder="e.g., 75" min="30" max="300"
+              aria-label="Weight in kilograms">
+          </div>
+          <button class="btn btn-primary bmi-btn" id="bmi-calculate">Calculate BMI</button>
+        </div>
+
+        <div class="bmi-result glass-card" id="bmi-result">
+          <div class="bmi-gauge">
+            <div class="bmi-gauge-inner">
+              <div class="bmi-value" id="bmi-value">—</div>
+              <div class="bmi-category" id="bmi-category" style="color:var(--text-muted);">Enter your details</div>
+            </div>
+          </div>
+          <p class="bmi-recommendation" id="bmi-recommendation">Fill in your height and weight to get your BMI score and
+            personalized health recommendation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BLOG ========== -->
+  <section class="section" id="blog" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Fitness Blog</div>
+        <h2 class="section-title">Latest <span class="highlight">Articles</span></h2>
+        <p class="section-description">Expert insights, tips, and strategies to accelerate your fitness journey.</p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card glass-card reveal reveal-delay-1">
+          <div class="blog-card-img">
+            <img src="assets/images/blog-fitness.png" alt="Workout tips article" loading="lazy" width="400"
+              height="200">
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Workout Tips</span>
+            <h3 class="blog-card-title">10 Exercises That Burn the Most Calories in 30 Minutes</h3>
+            <p class="blog-card-excerpt">Maximize your time at the gym with these scientifically-backed
+              high-calorie-burn exercises.</p>
+            <div class="blog-card-meta">
+              <span>5 min read • Jun 1, 2026</span>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card glass-card reveal reveal-delay-2">
+          <div class="blog-card-img">
+            <img src="assets/images/blog-fitness.png" alt="Nutrition guide article" loading="lazy" width="400"
+              height="200">
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag" style="background:var(--neon-green-dim);color:var(--neon-green);">Nutrition</span>
+            <h3 class="blog-card-title">The Complete Guide to Meal Prep for Muscle Growth</h3>
+            <p class="blog-card-excerpt">Learn how to plan, prepare, and store your meals for maximum muscle gains with
+              minimal effort.</p>
+            <div class="blog-card-meta">
+              <span>7 min read • May 28, 2026</span>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card glass-card reveal reveal-delay-3">
+          <div class="blog-card-img">
+            <img src="assets/images/blog-fitness.png" alt="Fat loss strategies article" loading="lazy" width="400"
+              height="200">
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag" style="background:var(--neon-purple-dim);color:var(--neon-purple);">Fat Loss</span>
+            <h3 class="blog-card-title">Why You're Not Losing Fat — And How to Fix It Today</h3>
+            <p class="blog-card-excerpt">Common fat loss mistakes and the science-backed strategies to break through any
+              plateau.</p>
+            <div class="blog-card-meta">
+              <span>6 min read • May 25, 2026</span>
+              <a href="#" class="blog-read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">Let's Start Your <span class="highlight">Journey</span></h2>
+        <p class="section-description">Have questions? Our team is ready to help you take the first step toward your
+          transformation.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <div class="contact-form-card glass-card">
+          <form id="contact-form" aria-label="Contact form">
+            <div class="contact-form-group">
+              <label for="contact-name" class="contact-form-label">Full Name</label>
+              <input type="text" id="contact-name" class="contact-form-input" placeholder="John Doe" required>
+            </div>
+            <div class="contact-form-group">
+              <label for="contact-email" class="contact-form-label">Email Address</label>
+              <input type="email" id="contact-email" class="contact-form-input" placeholder="john@example.com" required>
+            </div>
+            <div class="contact-form-group">
+              <label for="contact-subject" class="contact-form-label">Subject</label>
+              <input type="text" id="contact-subject" class="contact-form-input" placeholder="Membership inquiry">
+            </div>
+            <div class="contact-form-group">
+              <label for="contact-message" class="contact-form-label">Message</label>
+              <textarea id="contact-message" class="contact-form-textarea"
+                placeholder="Tell us about your fitness goals..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="contact-submit" style="width:100%;">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-info-card glass-card">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📧</div>
+            <div>
+              <div class="contact-info-label">Email Us</div>
+              <div class="contact-info-value">hello@fitforgeelite.com</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div>
+              <div class="contact-info-label">Call Us</div>
+              <div class="contact-info-value">+1 (555) 123-4567</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <div class="contact-info-label">Visit Us</div>
+              <div class="contact-info-value">123 Fitness Blvd, Los Angeles, CA</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">⏰</div>
+            <div>
+              <div class="contact-info-label">Hours</div>
+              <div class="contact-info-value">Mon-Sat: 5AM - 11PM</div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="#" class="contact-social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="contact-social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="contact-social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="contact-social-link" aria-label="YouTube">▶️</a>
+            <a href="#" class="contact-social-link" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="nav-logo">
+            <div class="logo-icon">⚡</div>
+            <span>FITFORGE</span>
+          </a>
+          <p class="footer-brand-desc">Transform your body, elevate your life. AI-powered fitness programs, expert
+            coaching, and a community that pushes you to greatness.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Programs</div>
+          <div class="footer-links">
+            <a href="#programs">Fat Loss</a>
+            <a href="#programs">Muscle Building</a>
+            <a href="#programs">Strength Training</a>
+            <a href="#programs">Home Workout</a>
+            <a href="#programs">Women's Fitness</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#trainers">Our Trainers</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Support</div>
+          <div class="footer-links">
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">FAQ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 FitForge Elite. All rights reserved.</span>
+        <span>Built with 💙 for fitness enthusiasts worldwide.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Button (scroll to top) -->
+  <button class="fab" id="fab-top" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
