@@ -49,6 +49,9 @@
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
             🌙
           </button>
+          <button id="open-login" class="btn btn-outline btn-sm">
+            Member Login
+          </button>
           <a href="#pricing" class="btn btn-primary btn-sm" id="nav-cta">Join Now</a>
           <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span><span></span><span></span>
@@ -747,6 +750,8 @@
     </div>
   </section>
 
+
+
   <!-- ========== CONTACT ========== -->
   <section class="section" id="contact">
     <div class="container">
@@ -873,6 +878,34 @@
       </div>
     </div>
   </footer>
+  <!-- LOGIN MODAL -->
+  <div id="login-modal" class="login-modal">
+    <div class="login-modal-content glass-card">
+
+      <span id="close-login" class="close-login">&times;</span>
+
+      <h2>Member Login</h2>
+
+      <input type="email" id="auth-email" class="contact-form-input" placeholder="Email Address">
+
+      <input type="password" id="auth-password" class="contact-form-input" placeholder="Password">
+
+      <button id="signup-btn" class="btn btn-outline">
+        Sign Up
+      </button>
+
+      <button id="login-btn" class="btn btn-primary">
+        Login
+      </button>
+
+      <button id="logout-btn" class="btn btn-outline" style="display:none;">
+        Logout
+      </button>
+
+      <p id="auth-status"></p>
+
+    </div>
+  </div>
 
   <!-- Floating Action Button (scroll to top) -->
   <button class="fab" id="fab-top" aria-label="Scroll to top">↑</button>

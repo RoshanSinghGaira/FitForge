@@ -1854,3 +1854,38 @@ ol {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.login-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, .8);
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+}
+
+.login-modal.active {
+  display: flex;
+}
+
+.login-modal-content {
+  width: 90%;
+  max-width: 450px;
+  padding: 2rem;
+  position: relative;
+}
+
+.login-modal-content input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.close-login {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}

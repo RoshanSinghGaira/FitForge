@@ -13,6 +13,7 @@
     supabaseUrl,
     supabaseAnonKey
   );
+  console.log("Supabase initialized");
   /* ─────────────────────────────────────────────
      1. PRELOADER
      ───────────────────────────────────────────── */
@@ -487,6 +488,119 @@
       hamburger.classList.remove('active');
       navLinks.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+  /* ==========================
+   AUTHENTICATION
+========================== */
+
+  const signupBtn = document.getElementById('signup-btn');
+  const loginBtn = document.getElementById('login-btn');
+  const logoutBtn = document.getElementById('logout-btn');
+  const authStatus = document.getElementById('auth-status');
+
+  signupBtn?.addEventListener('click', async () => {
+
+    const email = document.getElementById('auth-email').value.trim();
+    const password = document.getElementById('auth-password').value;
+
+    if (!email || !password) {
+      authStatus.textContent = 'Please enter email and password.';
+      return;
+    }
+
+    authStatus.textContent = 'Signing up...';
+
+    const { error } = await supabase.auth.signUp({
+      email,
+      password
+    });
+
+    if (error) {
+      authStatus.textContent = error.message;
+      return;
+    }
+
+    authStatus.textContent =
+      'Signup successful. Check your email.';
+  });
+
+
+  loginBtn?.addEventListener('click', async () => {
+
+    const email = document.getElementById('auth-email').value.trim();
+    const password = document.getElementById('auth-password').value;
+
+    if (!email || !password) {
+      authStatus.textContent = 'Please enter email and password.';
+      return;
+    }
+
+    authStatus.textContent = 'Logging in...';
+
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password
+    });
+
+    if (error) {
+      authStatus.textContent = error.message;
+      return;
+    }
+
+    authStatus.textContent = 'Logged in successfully';
+
+    logoutBtn.style.display = 'block';
+  });
+
+
+  logoutBtn?.addEventListener('click', async () => {
+
+    await supabase.auth.signOut();
+
+    authStatus.textContent = 'Logged out';
+
+    logoutBtn.style.display = 'none';
+  });
+
+
+  async function checkUser() {
+
+    const {
+      data: { session }
+    } = await supabase.auth.getSession();
+
+    if (session) {
+
+      authStatus.textContent =
+        `Logged in as ${session.user.email}`;
+
+      logoutBtn.style.display = 'block';
+    }
+  }
+
+  checkUser();
+
+
+  /* ==========================
+     LOGIN MODAL
+  ========================== */
+
+  const loginModal = document.getElementById('login-modal');
+  const openLogin = document.getElementById('open-login');
+  const closeLogin = document.getElementById('close-login');
+
+  openLogin?.addEventListener('click', () => {
+    loginModal.classList.add('active');
+  });
+
+  closeLogin?.addEventListener('click', () => {
+    loginModal.classList.remove('active');
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === loginModal) {
+      loginModal.classList.remove('active');
     }
   });
 
